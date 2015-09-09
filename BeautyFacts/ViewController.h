@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *beautyFactLabel;
+@property (strong, nonatomic) NSArray *facts;
 
 @end
 

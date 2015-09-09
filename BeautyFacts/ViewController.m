@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    self.facts = [[NSArray alloc]initWithObjects:@"Brazil has more \"Avon Ladies\" (900,000) than it has men and women in its army and navy", @"The first swivel-up lipstick in a tube appeared in 1923", nil ];
+
+    self.beautyFactLabel.text = [self.facts objectAtIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +27,13 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)showBeautyFact {
+   
+   
+    
+
+    
+    self.beautyFactLabel.text = [self.facts objectAtIndex:1];
+    
 }
 
 @end
